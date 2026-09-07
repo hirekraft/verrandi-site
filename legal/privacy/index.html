@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Verrandi</title>
+<meta name="description" content="How Verrandi, operated by AN Software LLC, handles data belonging to the businesses that use it.">
+<link rel="stylesheet" href="../legal.css">
+</head>
+<body>
+<main>
+
+  <p class="eyebrow">AN Software LLC</p>
+  <h1>Privacy Policy</h1>
+  <p class="stamp">Applies to Verrandi. Effective 6 September 2026.</p>
+
+  <p class="plain">
+    The short version: your business records are held in a database instance dedicated to you.
+    We do not sell them, we do not share them with advertisers, and we do not use them to train
+    machine-learning models. We do hold operational access to that database, and processes we
+    run read your connected systems on a schedule, including when nobody is signed in. This page
+    is specific about that rather than reassuring about it.
+  </p>
+
+  <h2>Who we are</h2>
+  <p>
+    Verrandi is built and operated by AN Software LLC ("we", "us"), a California limited
+    liability company. Contact us at <a href="mailto:alex@verrandi.com">alex@verrandi.com</a>.
+  </p>
+  <address>
+    AN Software LLC<br>
+    2108 N St Ste N<br>
+    Sacramento, CA 95816<br>
+    United States
+  </address>
+  <p>
+    This policy covers Verrandi, including its connection to QuickBooks Online and to any other
+    system a customer chooses to connect.
+  </p>
+
+  <h2>Where your data lives, and who holds the keys</h2>
+  <p>
+    Each customer's data is held in a database instance dedicated to that customer. We do not
+    maintain a combined store of customer content across customers.
+  </p>
+  <p>
+    There are two arrangements, and which one applies to you is agreed when you start:
+  </p>
+  <ul>
+    <li>
+      <strong>Managed</strong> — the default. The database instance is dedicated to you and the
+      records in it are yours, but we create and administer it, and we hold the administrative
+      credentials. In practice this means we can reach your content. We do so to operate and
+      repair the service, not to read your business.
+    </li>
+    <li>
+      <strong>Sovereign</strong> — the database belongs to your own cloud account and you hold
+      the administrative credentials. We reach it only through the access you grant.
+    </li>
+  </ul>
+  <p>
+    Some connected systems are read live rather than copied. QuickBooks Online is one of these:
+    accounting records are read from Intuit at the moment a question is asked and are not written
+    into our storage.
+  </p>
+
+  <h2>When we read, and on whose authority</h2>
+  <p>
+    Verrandi reads your connected systems in two ways, and one of them is unattended.
+  </p>
+  <p>
+    <strong>In the background.</strong> Scheduled processes we operate collect content from
+    connected sources — email, documents, calendar — using the authorization granted by the
+    person who connected each source. These run on a schedule whether or not anyone is signed
+    in. This is how the system stays current, and it means that connecting a source is a standing
+    grant rather than a per-session one.
+  </p>
+  <p>
+    <strong>When you ask.</strong> Answering a question reads from what has already been
+    collected, and may read a live system such as QuickBooks Online at that moment.
+  </p>
+
+  <h2>Who can see what</h2>
+  <p>
+    When a person signs in, what they can retrieve is limited to the sources they have been
+    granted and to content about them personally. That limit is applied when content is
+    retrieved, before it reaches the reasoning step.
+  </p>
+  <p>
+    Two things about this you should know rather than discover. First, the limit is enforced at
+    the level of the <em>source</em> — a person granted a source can retrieve what was collected
+    from it. It is not a per-item re-check against the permissions of the original system, so it
+    will not by itself reproduce fine-grained sharing rules inside a mailbox or a document store.
+    Second, an administrative role exists that can retrieve everything in your instance. Your own
+    administrator holds it, and so do we under the managed arrangement above.
+  </p>
+  <p>
+    If a category of material must never be reachable through Verrandi, do not connect the source
+    that holds it. That is the only boundary we can promise today.
+  </p>
+
+  <h2>Credentials</h2>
+  <p>
+    Access credentials — including OAuth tokens for QuickBooks Online — are held encrypted in
+    your own database instance. They are not held in a shared store.
+  </p>
+  <p>
+    They do, however, pass through services we operate. When you first authorize a system, the
+    authorization code is exchanged for a token by a service of ours, which then writes the token
+    to your instance; when a token is renewed, the renewal passes through that same service. Your
+    business records do not pass through it. We state this plainly because it is a real qualifier
+    on the sentence "your data stays in your own database," and we would rather you read it here
+    than infer it later.
+  </p>
+
+  <h2>Intuit and QuickBooks Online data</h2>
+  <p>Specific to the QuickBooks Online connection:</p>
+  <ul>
+    <li>We request only the accounting scope, and only for companies you explicitly connect.</li>
+    <li>Accounting data is read on demand to answer a question or prepare a proposed change. It is not copied into our storage, not indexed, and not retained after the request completes.</li>
+    <li>We do not write to your books without you approving the specific change first.</li>
+    <li>We do not disclose QuickBooks data to any third party except the infrastructure providers named below, and we do not use it for advertising or profiling.</li>
+    <li>Disconnecting removes our authorization. See <a href="../disconnect/">how to disconnect</a>.</li>
+  </ul>
+
+  <h2>What we never do</h2>
+  <ul>
+    <li>We do not sell customer data, and we do not share it with data brokers or advertisers.</li>
+    <li>We do not use customer content to train machine-learning models, and we do not permit our providers to do so.</li>
+    <li>We do not read customer content to build products or profiles.</li>
+  </ul>
+
+  <h2>Service providers</h2>
+  <p>
+    Verrandi runs on infrastructure operated by third parties, including database and cloud
+    hosting providers and the provider of the language model that performs reasoning. Content is
+    sent to the reasoning provider only as needed to answer a request. We select providers whose
+    business terms bar training on the content sent to them and limit its retention, and we do
+    not authorize any provider to use customer data for its own purposes. Their own terms govern
+    what they do, and we cannot audit them beyond what those terms allow.
+  </p>
+
+  <h2>Retention and deletion</h2>
+  <p>
+    Collected content stays for as long as you keep the source connected. Disconnecting a source
+    stops further collection but does not by itself delete what was already collected. Write to
+    <a href="mailto:alex@verrandi.com">alex@verrandi.com</a> to have it deleted and we will do
+    so. Under the sovereign arrangement you may also delete the database directly. Operational
+    logs that record that a request occurred, without its content, are kept for a limited period
+    for security and reliability.
+  </p>
+
+  <h2>Security</h2>
+  <p>
+    Credentials are stored encrypted. Retrieval is denied by default and permitted only after the
+    signed-in person's identity is resolved from their own session. We run automated checks that
+    look for misconfiguration which could widen access, and we treat a finding as an incident.
+    These checks run on a schedule, so they detect a problem rather than prevent one, and there
+    is a window between a misconfiguration appearing and a check noticing it.
+  </p>
+  <p>
+    We have no third-party security certification — no SOC 2, no ISO 27001 — and we do not claim
+    one.
+  </p>
+
+  <h2>Your rights</h2>
+  <p>
+    You may ask what is held about you, ask for a copy, ask for correction, or ask for deletion,
+    by writing to <a href="mailto:alex@verrandi.com">alex@verrandi.com</a>. We aim to respond
+    within 30 days. Depending on where you live you may also have the right to complain to a data
+    protection authority.
+  </p>
+
+  <h2>Children</h2>
+  <p>Verrandi is a business product and is not directed to anyone under 18.</p>
+
+  <h2>Changes</h2>
+  <p>
+    We may update this policy. The current version is always the one on this page, and the
+    effective date above changes when it does. We do not operate a notification list, so check
+    this page if it matters to you.
+  </p>
+
+  <footer>
+    <a href="../eula/">Terms of Service</a>
+    <a href="../disconnect/">Disconnect</a>
+    <a href="../../">Verrandi</a>
+    <span class="imprint">Verrandi is operated by AN Software LLC.</span>
+  </footer>
+
+</main>
+</body>
+</html>
